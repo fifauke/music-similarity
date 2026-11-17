@@ -1,0 +1,103 @@
+{
+  "title": "Badanie podobieństwa utworów muzycznych",
+  "randomize": true,
+  "webhook": "https://script.google.com/macros/s/AKfycbxnxdIZa5O_itJ04Te9IhMV1xtPDZrNEVsLtM2qcxRXrz4n69TeMixHN7v04q6CDEg/exec",
+  "scenarios": [
+    {
+      "name": "Scenariusz 1",
+      "description": "Posłuchaj utworu referencyjnego na górze, a następnie oceń w skali 0–100, jak bardzo każda z poniższych próbek jest do niego podobna.",
+      "reference": "samples/blues/blues.00000.wav",
+      "samples": [
+        {
+          "id": "blues_00001",
+          "label": "blues.00001",
+          "url": "samples/blues/blues.00001.wav"
+        },
+        {
+          "id": "blues_00002",
+          "label": "blues.00002",
+          "url": "samples/blues/blues.00002.wav"
+        },
+        {
+          "id": "jazz_00001",
+          "label": "jazz.00001",
+          "url": "samples/jazz/jazz.00001.wav"
+        },
+        {
+          "id": "hidden_ref_blues_00000",
+          "label": "Ukryta referencja",
+          "url": "samples/blues/blues.00000.wav"
+        },
+        {
+          "id": "anchor_noise",
+          "label": "Kotwica (szum)",
+          "url": "samples/noise.wav"
+        }
+      ]
+    },
+    {
+      "name": "Scenariusz 2",
+      "description": "Posłuchaj utworu referencyjnego na górze, a następnie oceń w skali 0–100, jak bardzo każda z poniższych próbek jest do niego podobna.",
+      "reference": "samples/rock/rock.00000.wav",
+      "samples": [
+        {
+          "id": "rock_00001",
+          "label": "rock.00001",
+          "url": "samples/rock/rock.00001.wav"
+        },
+        {
+          "id": "metal_00001",
+          "label": "metal.00001",
+          "url": "samples/metal/metal.00001.wav"
+        },
+        {
+          "id": "pop_00001",
+          "label": "pop.00001",
+          "url": "samples/pop/pop.00001.wav"
+        },
+        {
+          "id": "hidden_ref_rock_00000",
+          "label": "Ukryta referencja",
+          "url": "samples/rock/rock.00000.wav"
+        },
+        {
+          "id": "anchor_noise",
+          "label": "Kotwica (szum)",
+          "url": "samples/noise.wav"
+        }
+      ]
+    },
+    {
+      "name": "Scenariusz 3",
+      "description": "Posłuchaj utworu referencyjnego na górze, a następnie oceń w skali 0–100, jak bardzo każda z poniższych próbek jest do niego podobna.",
+      "reference": "samples/classical/classical.00000.wav",
+      "samples": [
+        {
+          "id": "classical_00001",
+          "label": "classical.00001",
+          "url": "samples/classical/classical.00001.wav"
+        },
+        {
+          "id": "jazz_00002",
+          "label": "jazz.00002",
+          "url": "samples/jazz/jazz.00002.wav"
+        },
+        {
+          "id": "hiphop_00001",
+          "label": "hiphop.00001",
+          "url": "samples/hiphop/hiphop.00001.wav"
+        },
+        {
+          "id": "hidden_ref_classical_00000",
+          "label": "Ukryta referencja",
+          "url": "samples/classical/classical.00000.wav"
+        },
+        {
+          "id": "anchor_noise",
+          "label": "Kotwica (szum)",
+          "url": "samples/noise.wav"
+        }
+      ]
+    }
+  ]
+}
